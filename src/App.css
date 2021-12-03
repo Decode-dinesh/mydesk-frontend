@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+.icon {
+  padding: 5px;
+  font-size: 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icon:hover {
+  box-shadow: 2px 4px gainsboro;
+  background-color: lightblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu {
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  margin: 0px;
+}
+
+.menu ul {
+  text-decoration: none;
+  padding: 0px;
+}
+
+.menu ul li {
+  list-style-type: none;
+}
+
+.list {
+  text-decoration: none;
+  list-style: none;
+}
+
+.list li {
+  padding: 2px 0px;
+}
+
+.card-bg {
+  /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+
+}
+
+.close-icon {
+  font-size: "26px";
+  color: rgb(190, 54, 54);
+  padding: 5px;
+}
+
+.close-icon:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 3px 0 black;
+}
+
+.show:hover,
+.trash:hover {
+  cursor: pointer !important;
+  /* box-shadow: 0 3px 3px 0 black !important; */
+}
+
+.login-div,
+.signup-div {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.login_icon,
+.signup_icon {
+  padding: 11px;
+  background: gainsboro;
+  width: 35px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:576px) {
+  /* small */
+  .signup-body,
+  .login-body {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
   }
-  to {
-    transform: rotate(360deg);
+  .card-body {
+      padding: 0 !important;
+  }
+}
+
+@media (min-width:576px) {
+  /* medium */
+  .signup-body,
+  .login-body {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
   }
 }
