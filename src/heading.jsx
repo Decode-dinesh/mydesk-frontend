@@ -17,6 +17,8 @@ const Heading = () =>{
        history.push('/createTicket');
     }
 
+    console.log(searchString);
+
     return (
         <div className="d-flex justify-content-between bg-light">
             <div className="py-3 d-flex justify-content-between">

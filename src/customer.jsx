@@ -23,7 +23,7 @@ const Customer = () => {
   };
 
   const handleDelete = async (id) => {
-    let url = "https://ticket-management-tool.herokuapp.com/customer/tickets/${id}";
+    let url = `https://ticket-management-tool.herokuapp.com/customer/tickets/${id}`;
     
     await fetch(url, {
       method: "DELETE",
