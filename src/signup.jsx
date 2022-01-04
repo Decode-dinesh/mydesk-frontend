@@ -131,7 +131,7 @@ const Signup = () => {
               </select>
             </div>
 
-            <Button type="submit" className="btn btn-info px-3">
+            <Button type="submit" className="btn btn-info px-3 mt-3">
               Sign Up {loading && <Spinner animation="border" variant="light" />}
             </Button>
           </Form>

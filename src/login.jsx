@@ -64,10 +64,14 @@ const Login = () => {
                         </span>
                         <Form.Control type="password" name="password" id="password" value={password} className="bg-light form-control mb-2" onChange={(e)=> setPassword(e.target.value)} placeholder="Password" required/>
                         </div>      
-                            <Button type="submit" className="btn btn-info px-3">Login {loading && <Spinner animation="border" variant="light" />} </Button>
+                            <Button type="submit" className="btn btn-info px-3 mt-3">Login {loading && <Spinner animation="border" variant="light" />} </Button>
+                            <br />
+                            <Button type="submit" className="btn btn-warning m-3" onClick={() => {setEmail("agent@gmail.com"); setPassword("123456");}}>Agent credentials</Button>
+            
+                            <Button type="submit" className="btn btn-warning m-3" onClick={() => {setEmail("customer@gmail.com"); setPassword("123456");}}>customer crendentials</Button>
                     </Form>
                     <div>
-                        <Link to="/layout">Forgot Password</Link>
+                        <Link to="#">Forgot Password</Link>
                         <p>Doesn't have an account? <Link to="/register">Sign Up</Link></p>        
                     </div>
                 </div>

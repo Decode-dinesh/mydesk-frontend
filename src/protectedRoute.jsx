@@ -1,6 +1,6 @@
 import React from 'react';
 import jwt from 'jsonwebtoken';
-import {Route, Redirect} from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 
 
 let isAuth = false;
